@@ -3,7 +3,7 @@
  * @Autor: Diviner
  * @Date: 2021-04-12 15:03:29
  * @LastEditors: Diviner
- * @LastEditTime: 2021-04-13 23:36:55
+ * @LastEditTime: 2021-04-14 09:55:48
  */
 import { Body, Controller, Get, Logger, Post, Req } from '@nestjs/common';
 import { CatsService } from './cats.service';
@@ -12,6 +12,11 @@ import { Cat } from './interface/cat.interface';
 @Controller('cats')
 export class CatsController {
   private readonly logger = new Logger('CatsController');
+
+  // private readonly catsService: CatsService;
+  // constructor(catsService: CatsService) {
+  //   this.catsService = catsService;
+  // }
   constructor(private readonly catsService: CatsService) {}
 
   @Get(':id')

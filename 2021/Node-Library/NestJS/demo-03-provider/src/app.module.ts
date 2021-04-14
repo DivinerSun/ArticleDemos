@@ -3,7 +3,7 @@
  * @Autor: Diviner
  * @Date: 2021-04-13 21:00:22
  * @LastEditors: Diviner
- * @LastEditTime: 2021-04-13 23:38:33
+ * @LastEditTime: 2021-04-14 09:48:01
  */
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
